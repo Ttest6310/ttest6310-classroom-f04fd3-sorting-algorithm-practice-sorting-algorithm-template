@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "测试冒泡排序",
+      "setup": "pip install pytest",
+      "run": "python -m pytest tests/test_bubble.py -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "测试选择排序",
+      "setup": "pip install pytest",
+      "run": "python -m pytest tests/test_selection.py -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "测试插入排序",
+      "setup": "pip install pytest",
+      "run": "python -m pytest tests/test_insertion.py -v",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    }
+  ]
+} 
