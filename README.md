@@ -95,3 +95,17 @@ class SortingVisualizer:
 - Consider adding explanatory text or annotations to help understand the algorithm steps
 - Test your visualization with different array sizes and initial conditions
 - Make sure the visualization runs smoothly and is responsive to user controls 
+
+from visualization import SortingVisualizer
+
+# Create a bubble sort visualization
+visualizer = SortingVisualizer(algorithm='bubble')
+visualizer.start_animation()
+
+# For selection sort
+visualizer = SortingVisualizer(algorithm='selection')
+visualizer.start_animation()
+
+# For insertion sort
+visualizer = SortingVisualizer(algorithm='insertion')
+visualizer.start_animation() 
