@@ -1,78 +1,78 @@
-# 排序算法实现作业
+# Sorting Algorithm Implementation Assignment
 
-本作业要求你实现三种基本排序算法：冒泡排序、选择排序和插入排序。
+This assignment requires you to implement three basic sorting algorithms: bubble sort, selection sort, and insertion sort.
 
-## 任务要求
+## Requirements
 
-1. 在 `sorting.py` 文件中完成以下函数的实现：
-   - `bubble_sort(arr)`：冒泡排序
-   - `selection_sort(arr)`：选择排序
-   - `insertion_sort(arr)`：插入排序
+1. Complete the implementation of the following functions in the `sorting.py` file:
+   - `bubble_sort(arr)`: Bubble sort
+   - `selection_sort(arr)`: Selection sort
+   - `insertion_sort(arr)`: Insertion sort
 
-2. 所有函数应接受一个列表作为输入，并返回排序后的新列表，不应修改原始列表。
+2. All functions should accept a list as input and return a new sorted list without modifying the original list.
 
-3. 你的实现将通过自动化测试进行评分。
+3. Your implementation will be graded through automated testing.
 
-## 算法说明
+## Algorithm Descriptions
 
-### 冒泡排序
-- 冒泡排序通过重复遍历要排序的列表，比较相邻项并交换顺序错误的项
-- 重复遍历直到没有交换发生，表示列表已排序完成
+### Bubble Sort
+- Bubble sort works by repeatedly traversing the list to be sorted, comparing adjacent items and swapping them if they are in the wrong order
+- The traversal is repeated until no swaps occur, indicating the list is sorted
 
-### 选择排序
-- 选择排序通过从未排序部分找出最小元素，将其放到已排序部分的末尾
-- 重复此过程直到所有元素都被排序
+### Selection Sort
+- Selection sort works by finding the minimum element from the unsorted portion and putting it at the end of the sorted portion
+- This process is repeated until all elements are sorted
 
-### 插入排序
-- 插入排序通过构建已排序部分，并将未排序的元素一个个插入到已排序部分的正确位置
-- 类似于玩扑克牌时整理手中的牌
+### Insertion Sort
+- Insertion sort builds the sorted portion by inserting unsorted elements one by one into their correct positions
+- Similar to arranging cards in your hand when playing poker
 
-## 示例
+## Examples
 
-### 输入/输出示例
+### Input/Output Examples
 
 ```python
-# 示例1
-输入: [3, 1, 4, 2]
-输出: [1, 2, 3, 4]
+# Example 1
+Input: [3, 1, 4, 2]
+Output: [1, 2, 3, 4]
 
-# 示例2
-输入: []
-输出: []
+# Example 2
+Input: []
+Output: []
 
-# 示例3
-输入: [5]
-输出: [5]
+# Example 3
+Input: [5]
+Output: [5]
 ```
 
-### 冒泡排序示例实现
+### Bubble Sort Example Implementation
 
 ```python
 def bubble_sort_example(arr):
-    # 创建输入数组的副本，以免修改原始数组
+    # Create a copy of the input array to avoid modifying the original array
     result = arr.copy()
     n = len(result)
     
-    # 外循环：需要进行n-1次冒泡
+    # Outer loop: need to perform n-1 bubble passes
     for i in range(n):
-        # 内循环：比较相邻元素并交换
+        # Inner loop: compare adjacent elements and swap
         for j in range(0, n-i-1):
             if result[j] > result[j+1]:
-                # 交换元素
+                # Swap elements
                 result[j], result[j+1] = result[j+1], result[j]
     
     return result
 ```
 
-## 评分标准
+## Grading Criteria
 
-- 冒泡排序实现：30分
-- 选择排序实现：30分
-- 插入排序实现：30分
-- 总分：90分
+- Bubble sort implementation: 30 points
+- Selection sort implementation: 30 points
+- Insertion sort implementation: 30 points
+- Total: 90 points
 
-## 提交要求
+## Submission Requirements
 
-1. 完成 `sorting.py` 文件中的函数实现
-2. 确保所有测试用例通过
-3. 不要修改测试文件或配置文件 
+1. Complete the function implementations in the `sorting.py` file
+2. Ensure all test cases pass
+3. Do not modify the test files or configuration files 
