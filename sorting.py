@@ -1,20 +1,20 @@
 def bubble_sort(arr: list) -> list:
-    """冒泡排序：每次比较相邻元素，将较大的元素向后移动"""
-    # TODO: 补全代码
-    # 提示：实现冒泡排序算法，返回排序后的数组
-    # 注意：不要修改原始数组，应该返回一个新的已排序数组
+    """Bubble sort: Compare adjacent elements in each pass and move larger elements backward"""
+    # TODO: Complete the code
+    # Hint: Implement bubble sort algorithm and return the sorted array
+    # Note: Do not modify the original array, return a new sorted array instead
     pass
 
 def selection_sort(arr: list) -> list:
-    """选择排序：每次选择未排序部分的最小元素放到已排序末尾"""
-    # TODO: 补全代码
-    # 提示：实现选择排序算法，返回排序后的数组
-    # 注意：不要修改原始数组，应该返回一个新的已排序数组
+    """Selection sort: Select the minimum element from the unsorted portion and place it at the end of the sorted portion"""
+    # TODO: Complete the code
+    # Hint: Implement selection sort algorithm and return the sorted array
+    # Note: Do not modify the original array, return a new sorted array instead
     pass
 
 def insertion_sort(arr: list) -> list:
-    """插入排序：将未排序元素逐个插入到已排序部分的正确位置"""
-    # TODO: 补全代码
-    # 提示：实现插入排序算法，返回排序后的数组
-    # 注意：不要修改原始数组，应该返回一个新的已排序数组
+    """Insertion sort: Insert each unsorted element into its correct position in the sorted portion"""
+    # TODO: Complete the code
+    # Hint: Implement insertion sort algorithm and return the sorted array
+    # Note: Do not modify the original array, return a new sorted array instead
     pass
